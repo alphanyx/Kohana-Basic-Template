@@ -1,19 +1,12 @@
 <?php
 
-/*
-Doctrine
-Sass & Compass
-
-
-*/
-
 /**
  * Defines the PATH Constants that are required for the framework.
  */
 $paths = array(
-	'app'	=> '../application',	// The directory in which the application rescources are located
-	'mod'		=> '../modules',		// The directory in which the modules are located
-	'sys'		=> '../system',			// The directory in which the Kohana rescources are located
+	'app'			=> '../application',	// The directory in which the application rescources are located
+	'mod'			=> '../modules',		// The directory in which the modules are located
+	'sys'			=> '../system',			// The directory in which the Kohana rescources are located
 	'data'			=> '../data',			// The directory in which all files should be saved
 	'cache'			=> '../cache',			// The directory in which the cache files will be saved
 	'log'			=> '../logs',			// The directory in which the log files will be saved
