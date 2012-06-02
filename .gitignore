@@ -1,4 +1,2 @@
-cache/smarty/cache/*
-cache/smarty/compile/*
-cache/doctrine/proxies/*
-logs/*
+cache/.sass-cache
+cache/doctrine
