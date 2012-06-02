@@ -1,0 +1,18 @@
+[submodule "modules/autoload"]
+	path = modules/autoload
+	url = git@github.com:mikelfroese/Kohana-Autoload.git
+[submodule "modules/doctrine"]
+	path = modules/doctrine
+	url = git@github.com:mikelfroese/Kohana-Doctrine.git
+[submodule "modules/smarty"]
+	path = modules/smarty
+	url = git@github.com:mikelfroese/Kohana-Smarty.git
+[submodule "modules/cli"]
+	path = modules/cli
+	url = git://github.com/OpenBuildings/kohana-cli.git
+[submodule "system"]
+	path = system
+	url = https://github.com/kohana/core.git
+[submodule "modules/helper"]
+	path = modules/helper
+	url = git@github.com:mikelfroese/Kohana-Helper.git

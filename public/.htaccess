@@ -1,0 +1,33 @@
+# Turn on URL rewriting
+RewriteEngine On
+
+# Installation directory
+RewriteBase /
+
+# Protect hidden files from being viewed
+<Files .*>
+	Order Deny,Allow
+	Deny From All
+</Files>
+
+# Allow any files or directories that exist to be displayed directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+ExpiresActive On
+ExpiresByType application/javascript "access plus 7 days"
+ExpiresByType application/x-javascript "access plus 7 days"
+ExpiresByType text/javascript "access plus 7 days"
+ExpiresByType text/css "access plus 7 days"
+ExpiresByType image/gif "access plus 7 days"
+ExpiresByType image/jpg "access plus 7 days"
+ExpiresByType image/jpeg "access plus 7 days"
+ExpiresByType image/png "access plus 7 days"
+ExpiresByType image/bmp "access plus 7 days"
+ExpiresByType application/x-shockwave-flash "access plus 7 days"
+
+AddType text/x-component .htc
+
+
+# Rewrite all other URLs to index.php/URL
+RewriteRule .* index.php/$0 [PT]
